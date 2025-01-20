@@ -1,0 +1,22 @@
+Package: BASIC
+Type: Package
+Title: BASIC
+Version: 0.1.0
+Author:  person("Lida", "Wang", , "lida.wang.96@gmailcom", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Bulk And Single cell eQTL Integration across Cell states
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends:
+  R (>= 3.5.0)
+Imports:
+  dplyr,
+  data.table,
+  tidyr,
+  R.utils,
+  pracma,
+  quadprog,
+  MASS
