@@ -89,7 +89,8 @@ weight <- nnls.weights(beta,se)
 #### BASIC Step 2: project sc-eQTLs onto the PCs 
 - **nPC**: Number of PCs to use. Maximum is number of cell types - 1 (K-1)
 ```r
-meta<-meta_regression_fast(beta,se,nPC=(ncol(beta)-3))
+K<-8 #8 cell types in example 
+meta<-meta_regression_fast(beta,se,nPC=(K-1))
 MDS_ALL<-meta[[1]]
 gamma_all<-meta[[2]]
 ```
@@ -99,12 +100,12 @@ The step 2 output includes:
 
 #### BASIC Step 3: Integrate Bulk eQTL and joint analyze
 ```r
-basic_res<-basic_axisQTL(beta,se,gamma_all,MDS_ALL,weight,nPC=7)
+basic_res<-basic_axisQTL(beta,se,gamma_all,MDS_ALL,weight,nPC=(K-1))
 ```
 
 ### 3. Output results
 The output includes:
-* K PCs Axis-QTL palue and Cauchty combined p value
+* K PCs Axis-QTL palue and Cauchy combined p value
 * K PCs Axis-QTL effect size and s.e.
 
 ## Contact
