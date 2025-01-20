@@ -86,13 +86,13 @@ weight <- nnls.weights(beta,se)
 ```
 
 
-#### BASIC Step 2: project sc-eQTLs onto the PCs 
-- **nPC**: Number of PCs to use. Maximum is number of cell types - 1 (K-1)
+#### BASIC Step 2: project sc-eQTLs onto PCs 
+- **nPC**: Number of PCs to use. Maximum is the number of cell types - 1 (K-1)
 ```r
-K<-8 #8 cell types in example 
-meta<-meta_regression_fast(beta,se,nPC=(K-1))
-MDS_ALL<-meta[[1]]
-gamma_all<-meta[[2]]
+K <- 8 #8 cell types in example 
+meta <- meta_regression_fast(beta,se,nPC=(K-1))
+MDS_ALL <- meta[[1]]
+gamma_all <- meta[[2]]
 ```
 The step 2 output includes:
 * PC loadings: the loading PC 0 to PC (K-1)
@@ -100,7 +100,7 @@ The step 2 output includes:
 
 #### BASIC Step 3: Integrate Bulk eQTL and joint analyze
 ```r
-basic_res<-basic_axisQTL(beta,se,gamma_all,MDS_ALL,weight,nPC=(K-1))
+basic_res <- basic_axisQTL(beta,se,gamma_all,MDS_ALL,weight,nPC=(K-1))
 ```
 
 ### 3. Output results
