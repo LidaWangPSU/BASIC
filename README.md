@@ -95,8 +95,8 @@ MDS_ALL <- meta[[1]]
 gamma_all <- meta[[2]]
 ```
 The step 2 output includes:
-* PC loadings: the loading PC 0 to PC (K-1)
-* Projected eQTL by meta-regression: including the gene-snp pairs, gene id, snp id, effect sizes for K PCs and s.e. for K PCs
+* PC loadings: the loadings of PC 0 to PC (K-1)
+* Projected eQTL by meta-regression: effect sizes and s.e. for K PCs
 
 #### BASIC Step 3: Integrate Bulk eQTL and joint analyze
 ```r
@@ -105,8 +105,8 @@ basic_res <- basic_axisQTL(beta,se,gamma_all,MDS_ALL,weight,nPC=(K-1))
 
 ### 3. Output results
 The output includes:
-* K PCs Axis-QTL palue and Cauchy combined p value
-* K PCs Axis-QTL effect size and s.e.
+* K PCs axis-QTL p value and Cauchy combined p value
+* K PCs axis-QTL effect size and s.e.
 
 ## Contact
 Lida Wang [lida.wang.96@gmail.com](lida.wang.96@gmail.com)
