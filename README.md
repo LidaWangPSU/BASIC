@@ -23,11 +23,11 @@ install.packages("devtools")
 library(devtools)
 ```
 
-Install ATAC and BASIC from the GitHub repository:
+Install ACAT and BASIC from the GitHub repository:
 
 ```
 devtools::install_github("yaowuliu/ACAT")
-library(ATAC)
+library(ACAT)
 devtools::install_github("LidaWangPSU/BASIC/BASIC")
 library(BASIC)
 ```
