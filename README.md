@@ -108,5 +108,7 @@ The output includes:
 * K PCs axis-QTL p value and Cauchy combined p value
 * K PCs axis-QTL effect size and s.e.
 
+Example of EXPRESSO output can be found [here](https://github.com/LidaWangPSU/BASIC/tree/main/basic_output).
+
 ## Contact
 Lida Wang [lida.wang.96@gmail.com](lida.wang.96@gmail.com)
