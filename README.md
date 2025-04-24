@@ -15,7 +15,7 @@ To enhance the efficacy of sc-eQTL studies, we propose a novel method that integ
 It is developed and maintained by Lida Wang at [Dajiang Liu's Group](https://dajiangliu.blog).
 
 ## Installation
-BASIC is hosted on GitHub, making it easy to install and update. Before installing. The following R packages are required: MASS, dplyr, data.table, tidyr, R.utils, pracma, quadprog and ATAC.
+BASIC is hosted on GitHub (R >= 4.2.1), making it easy to install and update. Before installing. The following R packages are required: MASS, dplyr, data.table, tidyr, R.utils, pracma, quadprog and ATAC.
 
 Steps to Install:
 ```r
