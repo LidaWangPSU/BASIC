@@ -13,10 +13,10 @@ RoxygenNote: 7.3.2
 Depends:
   R (>= 3.5.0)
 Imports:
-  dplyr,
-  data.table,
-  tidyr,
-  R.utils,
-  pracma,
-  quadprog,
+  dplyr(>= 1.1.4),
+  data.table(>= 1.14.2),
+  tidyr(>= 1.3.1),
+  R.utils(>= 2.13.0),
+  pracma(>= 2.4.4),
+  quadprog(>= 1.5),
   MASS
