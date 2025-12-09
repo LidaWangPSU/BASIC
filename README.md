@@ -1,5 +1,5 @@
 # BASIC
-Bulk And Single cell eQTL Integration across Cell states (BASIC)
+Bulk And Single cell eQTL Integration across Cell states [BASIC](https://www.nature.com/articles/s41467-025-65643-w#data-availability)
 
 
 ## Table of contents
